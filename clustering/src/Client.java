@@ -3,6 +3,8 @@
  */
 public class Client extends Point {
 
+    boolean inRoute;
+
     Client(int id, int startWindow, int endWindow){
         this.id=id;
         this.isDepot=false;
@@ -19,7 +21,10 @@ public class Client extends Point {
         pam_dist+=0.5*Math.abs((endWindow-startWindow-matr.matrix[posPoint][myPoint].point.endWindow+matr.matrix[posPoint][myPoint].point.startWindow)/2);
         return pam_dist;
     }
-
+    @Override
+    public String toString(){
+        return "(id#"+id+"; Client)";
+    }
     //new comparator for clients
   /*  @Override
     public int compare(Client c1, Client c2){

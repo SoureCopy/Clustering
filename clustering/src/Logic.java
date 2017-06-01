@@ -9,9 +9,9 @@ public class Logic {
 
     public void test() {
         matr = new MatrixDistance();
-        matr.matrix = new ObjectMatrix[20][16];
-        amountClient=100;
-        amountDepot=10;
+        matr.matrix = new ObjectMatrix[16][12];
+        amountClient=12;
+        amountDepot=4;
 
         for (int i = 0; i < amountDepot; i++) {
             Depot d1 = new Depot();

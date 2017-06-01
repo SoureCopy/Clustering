@@ -14,7 +14,7 @@ public class ThreeCriteria {
         this.depots = depots;
     }
 
-    public void CriteriaCluster() {
+    public void criteriaCluster() {
         double record, temp, min;
         boolean eff;
         int numbDepot = -1, min_id = -1;
